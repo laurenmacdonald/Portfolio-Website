@@ -1,0 +1,48 @@
+/*Author: Lauren MacDonald November 2022*/
+.col, .col .paragraph1, .heading2, .skills, .skills li, b{
+    background: #E1E8E0;
+    color: #3B453A;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.col{
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.heading{
+    padding: 25px 25px 15px 25px;
+}
+.heading2{
+    padding: 0 15px 0 15px;
+    border-bottom:#3B453A solid 1px;
+}
+
+.skills{
+    padding: 0 10px 5px 30px;
+}
+.skills li{
+    padding-top: 5px;
+}
+/*Responsiveness - Desktop*/
+@media all and (min-width: 960px) {
+    .container{
+        padding: 60px 80px 60px 80px;
+    }
+    .heading{
+        padding: 0;
+    }
+    .column-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .col{
+        margin: 20px;
+        width: 50%;
+    }
+
+    
+}

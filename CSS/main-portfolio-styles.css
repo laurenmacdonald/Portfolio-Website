@@ -1,0 +1,206 @@
+/*Author: Lauren MacDonald November 2022*/
+*{
+    background-color: #3B453A;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #E1E8E0;
+    letter-spacing: 1px;    
+}
+/*Page Fade-in*/
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/*Navigation Bar*/
+.nav-bar{
+    padding: 15px 15px;
+}
+.nav-main-link{
+    font-size: x-large;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 20px 25px 20px 25px;
+    text-align: center;
+}
+.nav-main-link-active{
+    color: #ABC1A8;
+    font-size: x-large;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 25px 20px 25px;
+}
+.nav-bar-ul{
+    list-style-type: none;
+}
+.nav-link{
+    font-size: x-large;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    text-align: center;
+}
+.nav-link-active{
+    color: #ABC1A8;
+    font-size: x-large;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 25px;
+    display: block;
+}
+
+.nav-link:hover, .nav-main-link:hover{
+    color: #86A681;
+    
+}
+/*Footer Styling*/
+.footer-nav-menu{
+    padding: 0 15px;
+}
+.footer-menu{
+    list-style-type: none;
+}
+.footer-menu li a{
+    display:block;
+    padding: 15px 25px;
+}
+.footer-link{
+    text-decoration: none;
+}
+.github{
+    width:50%;
+}
+.github:hover, .linkedin:hover{
+    opacity: .5;
+    transition: .5s ease;
+}
+
+/*Navigation Bar Responsiveness - Mobile*/
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-bar-ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Footer Responsiveness - Mobile*/
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Main Content Styling*/
+.homecontent{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.heading1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-bottom: #E1E8E0 solid 1px;
+}
+.heading2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding-bottom: 2px;
+}
+.paragraph1{
+    padding: 5px 15px;
+    line-height: 35px;
+}
+.container{
+    padding: 25px 25px 15px 25px;
+}
+a:hover{
+    transition: .5s ease;
+}
+
+/*TABLET RESPONSIVENESS*/
+@media all and (min-width: 615px) {
+/**Navigation Bar Responsiveness - Tablet*/
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-bar-ul{
+        justify-content: space-around;
+        align-items: flex-end;  
+        flex-direction: row;   
+        flex-wrap: nowrap;
+    }
+
+    .nav-link{
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+/*Main Content Responsivness - Tablet*/
+    .heading1{
+        font-size: 50px;
+    }
+    .container{
+        padding: 60px 100px 60px 80px;
+    }
+
+}
+
+/*DESKTOP RESPONSIVENESS*/
+@media all and (min-width: 960px) {
+    /*Navigation Bar Responsiveness - Desktop*/
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-bar-ul{
+        justify-content: space-around;
+        align-items: flex-end;  
+        flex-direction: row;   
+        flex-wrap: nowrap;
+    }
+
+    .nav-link{
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+/*Main Content Responsiveness - Desktop*/
+    .container{
+        padding: 60px 200px 60px 80px;
+    }
+
+}
+
+

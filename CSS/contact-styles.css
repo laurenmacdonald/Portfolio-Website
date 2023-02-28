@@ -29,7 +29,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 15px 75px 15px 75px;
+        padding: 60px 200px 60px 200px;
     }
     .col1{
         width: 55%;
